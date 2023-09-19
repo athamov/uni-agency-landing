@@ -63,8 +63,8 @@
       </div>
     </div>
   </header> -->
-  <header class="container mx-auto px-8 flex flex-row items-center justify-between">
-    <div class="w-52 lg:w-80 "><img src="/image/logo.png" alt=""></div>
+  <header class="container mx-auto px-8 flex flex-row items-center justify-between" id="header">
+    <div class="w-52 lg:w-80 "><a href="#header"><img src="/image/logo.png" alt=""></a></div>
     <ul class="hidden md:flex flex-row gap-4 lg:gap-16 lg:text-lg text-base font-medium">
       <!-- <li>
             <a href="#"
@@ -72,17 +72,17 @@
               aria-current="page">Home</a>
           </li> -->
       <li>
-        <a href="#"
+        <a href="#whatGet"
           class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Что
           вы получите</a>
       </li>
       <li>
-        <a href="#"
+        <a href="#stages"
           class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Этапы
           работ</a>
       </li>
       <li>
-        <a href="#"
+        <a href="#portfolio" 
           class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Портфолио</a>
       </li>
     </ul>
@@ -166,8 +166,8 @@
     </section>
 
     <!-- what you get -->
-    <section>
-      <h2 class="text-3xl font-bold mt-32 text-center">
+    <section id="whatGet">
+      <h2 class="text-5xl font-bold mt-32 text-center">
         ЧТО ВЫ ПОЛУЧИТЕ ?
       </h2>
       <div class="mt-24 flex flex-col gap-20 xl:flex-row justify-center items-center">
@@ -206,8 +206,8 @@
     </section>
 
     <!-- Work stage -->
-    <section>
-      <h2 class="text-3xl font-bold mt-32 text-center">
+    <section id="stages">
+      <h2 class="text-5xl font-bold mt-32 text-center">
         ЭТАПЫ РАБОТ
       </h2>
       <div class="flex flex-col justify-center mt-24">
@@ -269,8 +269,8 @@
 
     </section>
     <!-- clients -->
-    <section>
-      <h2 class="text-3xl font-bold mt-32 text-center">
+    <section id="portfolio">
+      <h2 class="text-5xl font-bold mt-32 text-center">
         ПОРТФОЛИО
       </h2>
       <div class="grid grid-cols-3">
@@ -285,7 +285,7 @@
 
     <!-- Form -->
     <div class="flex flex-col justify-center">
-      <h2 class="text-3xl font-bold mt-32 text-center">
+      <h2 class="text-5xl font-bold mt-32 text-center">
         Есть проект? Гоу обсудим!
       </h2>
       <form id="contact-form" action="http://form-for-telegram-bot.vercel.app/send-contact" method="POST"
@@ -297,7 +297,7 @@
           </div>
           <div class="flex flex-col items-center lg:items-start">
             <label for="tel" class="text-3xl font-light my-4">Номер (обязательно)</label>
-            <input id="tel" name="tel" type="tel" value="(+998) (__) ___--" oninput="formatPhoneNumber(this)"autocomplete="off" onkeypress="return onlyNumbers(event)""
+            <input id="tel" name="tel" type="tel" value="(+998) (__) __-__" 
               class="p-2 bg-gray-300 w-[420px] rounded-md" required />
           </div>
         </div>
@@ -313,7 +313,7 @@
 
   <footer class=" mt-48 py-8 bg-black">
     <div class="container mx-auto px-8 flex lg:flex-row justify-between">
-      <div><img src="/image/logo-white.png" class="w-56" alt=""></div>
+      <div><a href="#header"><img src="/image/logo-white.png" class="w-56" alt=""></a></div>
       <div class="flex flex-col gap-2 text-white">
         <p class="font-semibold">Контакты</p>
         <a href="tel:+998994935584">+998994935584</a>
@@ -371,37 +371,29 @@
       showMenu = !showMenu;
     }
 
-    function formatPhoneNumber() {
-  const input = document.getElementById('phoneNumber');
-  const phoneNumber = input.value.replace(/[^\d]/g, ''); // Remove non-numeric characters
-  let formattedNumber = '';
+//     function formatPhoneNumber(input) {
+//   var formattedNumber = "(+998) (__) __-__"; // Default format
 
-  if (phoneNumber.length > 0) {
-    formattedNumber += '(';
-    formattedNumber += phoneNumber.substring(0, 3);
-    formattedNumber += ') ';
-    formattedNumber += phoneNumber.substring(3, 6);
-    formattedNumber += ' ';
-    formattedNumber += phoneNumber.substring(6, 9);
-    formattedNumber += '-';
-    formattedNumber += phoneNumber.substring(9);
-  } else {
-    formattedNumber = "(+998) (__) ___--";
-  }
-  
-  input.value = formattedNumber;
-}
+//   // Retrieve the value entered by the user
+//   var userValue = input.value;
 
+//   // Replace the underscore (_) characters in the default format with the user's input
+//   formattedNumber = formattedNumber.replace(/_/g, function(match) {
+//     return userValue.charAt(0) === '_' ? userValue.charAt(0) : match;
+//   });
 
-function onlyNumbers(event) {
-  const allowedKeys = [8, 9, 37, 39]; // Keys: Backspace, Tab, Left arrow, Right arrow
-  
-  if (allowedKeys.includes(event.keyCode)) {
-    return true;
-  } else {
-    return /\d/.test(event.key);
-  }
-}
+//   // Update the value of the input field
+//   input.value = formattedNumber;
+// }
+
+// function preventModification(event) {
+//   var keyCode = event.keyCode || event.which;
+
+//   // Prevent the user from modifying the forbidden characters (+998), brackets, or dash
+//   if ([56, 57, 48, 192, 107, 109, 187, 189].indexOf(keyCode) !== -1) {
+//     event.preventDefault();
+//   }
+// }
 
 // function preventModification(event) {
 //   var keyCode = event.keyCode || event.which;
