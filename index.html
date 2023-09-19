@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+  <!-- <header class="hidden flex-row justify-between container mx-auto">
+    <div class="flex flex-col relative mr-auto items-center justify-between grow md:flex-row">
+      <div class=""><img src="/image/logo.png" alt=""></div>
+      <ul
+        class="font-medium absolute top-24 mx-6 flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:relative md:top-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 text-lg"
+        id="header-menu">
+        <li>
+          <a href="#"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Что
+            вы получите</a>
+        </li>
+        <li>
+          <a href="#"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Этапы
+            работ</a>
+        </li>
+        <li>
+          <a href="#"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Портфолио</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex items-center flex-row-reverse md:flex-row">
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false" id="header-menu-button" onclick="handleMenu()">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div>
+        <button id="lang-dropdown-button" data-dropdown-toggle="language" onclick="handleDropdown()"
+          class="text-white bg-gray-100  focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+          type="button"> <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png"
+            alt="" height="50px" width="50"> <span class="md:rotate-180 rotate-0">^</span>
+          </svg></button>
+        <div id="lang-dropdown"
+          class="z-10 hidden absolute bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a href="#" class="block px-4 py-2"><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/2560px-Flag_of_Uzbekistan.svg.png"
+                  alt="" width="50"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header> -->
+  <header class="container mx-auto px-8 flex flex-row items-center justify-between">
+    <div class="w-52 lg:w-80 "><img src="/image/logo.png" alt=""></div>
+    <ul class="hidden md:flex flex-row gap-4 lg:gap-16 lg:text-lg text-base font-medium">
+      <!-- <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+              aria-current="page">Home</a>
+          </li> -->
+      <li>
+        <a href="#"
+          class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Что
+          вы получите</a>
+      </li>
+      <li>
+        <a href="#"
+          class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Этапы
+          работ</a>
+      </li>
+      <li>
+        <a href="#"
+          class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Портфолио</a>
+      </li>
+    </ul>
+    <div class="flex items-center flex-row-reverse md:flex-row">
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 group"
+        aria-controls="navbar-default" aria-expanded="false" id="header-menu-button" onclick="handleMenu()">
+        <span class="sr-only">Open main menu</span>
+        <div>
+          <div
+            class="menu-line h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300 group-hover:opacity-100">
+          </div>
+          <div class="menu-line h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"></div>
+          <div
+            class="menu-line h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300 group-hover:opacity-100">
+          </div>
+        </div>
+      </button>
+      <div>
+        <button id="lang-dropdown-button" data-dropdown-toggle="language" onclick="handleDropdown()"
+          class="text-white bg-gray-100  focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+          type="button"> <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png"
+            alt="" height="50px" width="50"> <span class="md:rotate-180 rotate-0">^</span>
+          </svg></button>
+        <!-- Dropdown menu -->
+        <div id="lang-dropdown"
+          class="z-10 opacity-0 transition  absolute bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a href="#" class="block px-4 py-2"><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/2560px-Flag_of_Uzbekistan.svg.png"
+                  alt="" width="50"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </header>
+  <div class="container mx-auto p-8 flex flex-col justify-start">
+    <ul class="lg:text-lg absolute opacity-0 transition   z-20 text-base font-medium" id="header-menu">
+      <!-- <li>
+          <a href="#"
+            class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+            aria-current="page">Home</a>
+        </li> -->
+      <li>
+        <a href="#"
+          class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Что
+          вы получите</a>
+      </li>
+      <li>
+        <a href="#"
+          class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Этапы
+          работ</a>
+      </li>
+      <li>
+        <a href="#"
+          class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Портфолио</a>
+      </li>
+    </ul>
+  </div>
+
+  <main class="container mx-auto px-8">
+    <img src="/image/bg-image-1.png" alt="" class="absolute top-[80vh] right-0 -z-10">
+    <img src="/image/bg-image-2.png" alt="" class="absolute top-[150vh] left-0 -z-10">
+    <img src="/image/bg-image-3.png" alt="" class="absolute top-[230vh] right-0 -z-10">
+    <img src="/image/bg-image-4.png" alt="" class="absolute top-[300vh] left-0 -z-10">
+    <img src="/image/bg-image-5.png" alt="" class="absolute top-[370vh] right-0 -z-10">
+    <img src="/image/bg-image-7.png" alt="" class="absolute top-[450vh] left-0 lg:hidden -z-10">
+    <img src="/image/bg-image-6.png" alt="" class="absolute top-[520vh] right-0 lg:hidden -z-10">
+    <!-- Head  -->
+    <section class="flex flex-col-reverse justify-between lg:flex-row m-auto">
+      <div class="flex flex-col items-center justify-center basis-1/2">
+        <h3 class="text-3xl font-semibold ">Привлекайте внимание, выделяйтесь,достигайте успеха — с нами, вашим надежным
+          маркетинговым партнером! </h3>
+        <a href="#"
+          class="text-xl font-bold text-white rounded-full bg-[#28BF04] py-5 lg:py-6 px-8 lg:px-12 mt-12 mr-0 lg:mr-auto transition hover:opacity-90 hover:scale-110">ОСТАВИТЬ
+          ЗАЯВКУ</a>
+      </div>
+      <div class="basis-1/2"><img src="/image/pc.png" alt="" /></div>
+    </section>
+
+    <!-- what you get -->
+    <section>
+      <h2 class="text-3xl font-bold mt-32 text-center">
+        ЧТО ВЫ ПОЛУЧИТЕ ?
+      </h2>
+      <div class="mt-24 flex flex-col gap-20 xl:flex-row justify-center items-center">
+        <div class="flex flex-col justify-start">
+          <img src="/image/round.png" alt="" class="w-20 animate-pulse">
+          <p class="ml-20 w-72">У нас большойопыт работыи <br /> проверенные кейсы</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="/image/round.png" alt="" class="w-20 animate-pulse">
+          <p class="ml-20 w-72">Нестандартный подход <br />икреативное мышление</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="/image/round.png" alt="" class="w-20 animate-pulse">
+          <p class="ml-20 w-72">Прозрачная отчетностьи работа <br>толькона результат</p>
+        </div>
+      </div>
+      <div class="mt-20 flex flex-col gap-20 lg:flex-row justify-center items-center">
+        <div class="flex flex-col">
+          <img src="/image/round.png" alt="" class="w-20 animate-pulse">
+          <p class="ml-20 w-72">Профессиональная <br /> команда специалистов</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="/image/round.png" alt="" class="w-20 animate-pulse">
+          <p class="ml-20 w-72">Продуманная и систематизированная <br /> структура работы</p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+
+        <a href="#"
+          class="text-xl font-bold text-white rounded-full bg-[#28BF04] py-5 lg:py-6 px-8 lg:px-12 mt-12 my-auto  transition hover:opacity-90 hover:scale-110">ОСТАВИТЬ
+          ЗАЯВКУ</a>
+        <soan href="#"
+          class="text-xl font-bold text-white rounded-full bg-[#28BF04] py-5 lg:py-6 px-8 lg:px-12 mt-12 my-auto absolute animate-pulse w-[300px] h-20 -z-10">
+        </soan>
+      </div>
+    </section>
+
+    <!-- Work stage -->
+    <section>
+      <h2 class="text-3xl font-bold mt-32 text-center">
+        ЭТАПЫ РАБОТ
+      </h2>
+      <div class="flex flex-col justify-center mt-24">
+        <div class="grid grid-cols-2">
+          <div></div>
+          <div class="h-64 relative -left-1 flex items-start border-l-8 border-[#28BF04]">
+            <div class="flex flex-row items-center">
+              <div class="relative w-12 h-12 -left-7 -top-1 rounded-full bg-[#28BF04]"></div>
+              <p class="text-3xl font-light">Анализ и исследование</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 justify-end">
+          <div class="flex justify-end">
+            <div class="h-64 relative -right-1 flex items-start border-r-8 border-[#28BF04]">
+              <p class="text-3xl font-light">Разработка стратегии</p>
+              <div class="relative w-12 h-12 -right-7 -top-1 rounded-full bg-[#28BF04]"></div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div></div>
+          <div class="h-64 relative -left-1 flex items-start border-l-8 border-[#28BF04]">
+            <div class="flex flex-row items-center">
+              <div class="relative w-12 h-12 -left-7 -top-1 rounded-full bg-[#28BF04]"></div>
+              <p class="text-3xl font-light">Создание контента</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 justify-end">
+          <div class="flex justify-end">
+            <div class="h-64 relative -right-1 flex items-start border-r-8 border-[#28BF04]">
+              <p class="text-3xl font-light">Реализация и оптимизация</p>
+              <div class="relative w-12 h-12 -right-7 -top-1 rounded-full bg-[#28BF04]"></div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div></div>
+          <div class="h-64 relative -left-1 flex items-start border-l-8 border-[#28BF04]">
+            <div class="flex flex-row items-center">
+              <div class="relative w-12 h-12 -left-7 -top-1 rounded-full bg-[#28BF04]"></div>
+              <p class="text-3xl font-light">Аналитика и измерение</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 justify-end">
+          <div class="flex justify-end">
+            <div class="relative -right-1 flex items-start border-r-8 border-[#28BF04]">
+              <p class="text-3xl font-light">Оптимизация и развитие</p>
+              <div class="relative w-12 h-12 -right-7 top-1 rounded-full bg-[#28BF04]"></div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+
+    </section>
+    <!-- clients -->
+    <section>
+      <h2 class="text-3xl font-bold mt-32 text-center">
+        ПОРТФОЛИО
+      </h2>
+      <div class="grid grid-cols-3">
+        <div class="transition hover:opacity-90 hover:scale-125"><img src="/image/client-1.png" alt=""></div>
+        <div class="transition hover:opacity-90 hover:scale-125"><img src="/image/client-2.png" alt=""></div>
+        <div class="transition hover:opacity-90 hover:scale-125"><img src="/image/client-3.png" alt=""></div>
+        <div class="transition hover:opacity-90 hover:scale-125"><img src="/image/client-4.png" alt=""></div>
+        <div class="transition hover:opacity-90 hover:scale-125"><img src="/image/client-5.png" alt=""></div>
+        <div class="transition hover:opacity-90 hover:scale-125"><img src="/image/client-6.png" alt=""></div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <div class="flex flex-col justify-center">
+      <h2 class="text-3xl font-bold mt-32 text-center">
+        Есть проект? Гоу обсудим!
+      </h2>
+      <form id="contact-form" action="http://form-for-telegram-bot.vercel.app/send-contact" method="POST"
+        class="mt-24 flex flex-col">
+        <div class="flex flex-col justify-center gap-12 lg:flex-row ">
+          <div class="flex flex-col items-center lg:items-start">
+            <label for="name" class="text-3xl font-light my-4">Имя (обязательно)</label>
+            <input type="text" id="name" name="name" class="p-2 bg-gray-300 w-[420px] rounded-md" required />
+          </div>
+          <div class="flex flex-col items-center lg:items-start">
+            <label for="tel" class="text-3xl font-light my-4">Номер (обязательно)</label>
+            <input id="tel" name="tel" type="tel" value="(+998) (__) ___--" oninput="formatPhoneNumber(this)"autocomplete="off" onkeypress="return onlyNumbers(event)""
+              class="p-2 bg-gray-300 w-[420px] rounded-md" required />
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button type="button"
+            class="text-xl font-bold text-white rounded-full bg-[#28BF04] py-5 lg:py-6 px-8 lg:px-12 mt-12 transition hover:opacity-90 hover:scale-125"
+            onclick="sendContacts()">ОСТАВИТЬ
+            ЗАЯВКУ</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class=" mt-48 py-8 bg-black">
+    <div class="container mx-auto px-8 flex lg:flex-row justify-between">
+      <div><img src="/image/logo-white.png" class="w-56" alt=""></div>
+      <div class="flex flex-col gap-2 text-white">
+        <p class="font-semibold">Контакты</p>
+        <a href="tel:+998994935584">+998994935584</a>
+        <a href="tel:+998930045554">+998930045554</a>
+      </div>
+      <div class="flex lg:flex-row gap-14 ">
+        <div class=""><a href="#"><img src="/image/telegram.png" alt="" width="44"></a></div>
+        <div><a href="#"><img src="/image/instagram.png" alt="" width="44"></a></div>
+        <div><a href="#"><img src="/image/youtube.png" alt="" width="44"></a></div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script>
+    let showDropdown = false, showMenu = false;
+    function handleDropdown() {
+      if (showDropdown) {
+        document.getElementById("lang-dropdown").classList.add("opacity-0");
+        document.getElementById("lang-dropdown").classList.add("-translate-y-10");
+      }
+      else {
+        document.getElementById("lang-dropdown").classList.remove("opacity-0");
+        document.getElementById("lang-dropdown").classList.remove("-translate-y-10");
+      }
+
+
+      showDropdown = !showDropdown
+    }
+
+    function handleMenu() {
+      console.log(document.getElementById("header-menu"));
+
+      if (showMenu) {
+        document.getElementById("header-menu").classList.add("opacity-0");
+        document.getElementById("header-menu").classList.add("-translate-y-48");
+        let lines = document.getElementsByClassName("menu-line");
+        lines[0].classList.remove("rotate-45");
+        lines[0].classList.remove("translate-y-2");
+        lines[1].classList.remove("opacity-0");
+        lines[2].classList.remove("-translate-y-2");
+        lines[2].classList.remove("-rotate-45");
+      }
+      else {
+        document.getElementById("header-menu").classList.remove("opacity-0");
+        document.getElementById("header-menu").classList.remove("-translate-y-48");
+        let lines = document.getElementsByClassName("menu-line");
+        lines[0].classList.add("rotate-45");
+        lines[0].classList.add("translate-y-2");
+        lines[1].classList.add("opacity-0");
+        lines[2].classList.add("-translate-y-2");
+        lines[2].classList.add("-rotate-45");
+      }
+
+      showMenu = !showMenu;
+    }
+
+    function formatPhoneNumber() {
+  const input = document.getElementById('phoneNumber');
+  const phoneNumber = input.value.replace(/[^\d]/g, ''); // Remove non-numeric characters
+  let formattedNumber = '';
+
+  if (phoneNumber.length > 0) {
+    formattedNumber += '(';
+    formattedNumber += phoneNumber.substring(0, 3);
+    formattedNumber += ') ';
+    formattedNumber += phoneNumber.substring(3, 6);
+    formattedNumber += ' ';
+    formattedNumber += phoneNumber.substring(6, 9);
+    formattedNumber += '-';
+    formattedNumber += phoneNumber.substring(9);
+  } else {
+    formattedNumber = "(+998) (__) ___--";
+  }
+  
+  input.value = formattedNumber;
+}
+
+
+function onlyNumbers(event) {
+  const allowedKeys = [8, 9, 37, 39]; // Keys: Backspace, Tab, Left arrow, Right arrow
+  
+  if (allowedKeys.includes(event.keyCode)) {
+    return true;
+  } else {
+    return /\d/.test(event.key);
+  }
+}
+
+// function preventModification(event) {
+//   var keyCode = event.keyCode || event.which;
+
+//   // Prevent backspace, delete, and arrow keys if the cursor is on a forbidden character
+//   if ([8, 46, 37, 38, 39, 40].indexOf(keyCode) !== -1) {
+//     var input = event.target;
+//     var selectionStart = input.selectionStart;
+//     var selectionEnd = input.selectionEnd;
+//     var value = input.value;
+
+//     if (selectionStart < 5 || selectionEnd < 5 || value.charAt(selectionStart - 1) === "_" || value.charAt(selectionEnd - 1) === "_") {
+//       event.preventDefault();
+//     }
+//   }
+// }
+  </script>
+</body>
+
+</html>
