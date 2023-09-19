@@ -414,7 +414,7 @@
 async function sendContacts() {
     let [name,tel] = [document.getElementById("name").value,document.getElementById("tel").value];
     if(name && tel ) {
-       fetch('https://form-for-telegram-bot.vercel.app/', {
+       fetch('https://form-for-telegram-bot.vercel.app/send-contact', {
      
      // Adding method type
      method: "POST",
