@@ -410,6 +410,34 @@
 //     }
 //   }
 // }
+
+async function sendContacts() {
+    let [name,tel] = [document.getElementById("name").value,document.getElementById("tel").value];
+    if(name && tel ) {
+       fetch('https://form-for-telegram-bot.vercel.app/', {
+     
+     // Adding method type
+     method: "POST",
+      
+     // Adding body or contents to send
+     body: JSON.stringify({
+         name: "foo",
+         tel: "bar",
+     }),
+      
+     // Adding headers to the request
+     headers: {
+         "Content-type": "application/json; charset=UTF-8"
+     }
+ })
+  
+ // Converting to JSON
+ .then(response => response.json())
+  
+ // Displaying results to console
+ .then(json => console.log(json));
+    }
+  }
   </script>
 </body>
 
