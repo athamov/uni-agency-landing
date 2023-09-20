@@ -1,4 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   padding: 0;
   margin: 0;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-weight: medium;
+  src: url(/src/Gilroy-Medium.ttf);
+}
+
+a,button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,p {
+  font-family: 'Gilroy',sans-serif;
 }
