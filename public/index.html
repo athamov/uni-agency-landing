@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth mx-auto">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./public/styles.css">
-  <link rel="stylesheet" href="./style.css" />
+  <!-- <link rel="stylesheet" href=".styles.css"> -->
+  <link rel="stylesheet" href="/style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 
 </head>
@@ -75,7 +75,7 @@
       </div>
   </header>
   <menu
-    class="absolute top-0 right-0 transition opacity-0 w-96 h-screen p-8 -z-10 container mx-auto bg-white flex flex-col justify-start"
+    class="absolute top-0 overflow-hidden right-0 transition hidden w-96 h-screen p-8 -z-10 container mx-auto bg-white flex flex-col justify-start"
     id="header-menu">
     <div class="flex flex-row justify-between items-center">
       <a href="#header" class="w-32"><img src="/image/logo.png" alt=""></a>
@@ -307,13 +307,13 @@
   <script type="text/javascript">
     function handleMenu(showMenu) {
       if (showMenu) {
-        document.getElementById("header-menu").classList.add("opacity-0");
+        document.getElementById("header-menu").classList.add("hidden");
         document.getElementById("header-menu").classList.add("-z-10");
         document.getElementById("header-menu").classList.remove("z-10");
         document.getElementById("header-menu").classList.add("translate-x-48");
       }
       else {
-        document.getElementById("header-menu").classList.remove("opacity-0");
+        document.getElementById("header-menu").classList.remove("hidden");
         document.getElementById("header-menu").classList.remove("-z-10");
         document.getElementById("header-menu").classList.add("z-10");
         document.getElementById("header-menu").classList.remove("translate-x-48");
