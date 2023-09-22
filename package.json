@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "css": "tailwindcss -i ./src/styles.css -o ./public/styles.css"
+    "css": "tailwindcss -i ./src/styles.css -o ./public/styles.css",
+    "start":"node index"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",

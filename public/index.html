@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -16,7 +16,7 @@
 </head>
 
 <body class="relative">
-  <header class="container mx-auto px-8 flex flex-row items-center justify-between" id="header">
+  <header class="container mx-auto p-8 flex flex-row items-center justify-between" id="header">
     <div class="w-32"><a href="#header"><img src="/image/logo.png" alt=""></a></div>
     <ul class="hidden md:flex flex-row gap-4 lg:gap-16 text-base font-medium font-[arial]">
       <li>
@@ -51,10 +51,10 @@
       </button>
       <div>
         <button id="lang-dropdown-button" data-dropdown-toggle="language" onclick="handleDropdown()"
-          class="text-white bg-gray-100  hover:ring-4 hover:outline-none  font-medium rounded-lg text-sm md:px-5 md:py-2.5 text-center inline-flex items-center"
+          class="text-white  hover:ring-4 hover:outline-none  font-medium rounded-lg text-sm md:px-5 md:py-2.5 text-center inline-flex items-center"
           type="button"> <img
             src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png"
-            alt="" class="md:w-12 w-8"> <span class="md:rotate-180 rotate-0">^</span>
+            alt="" class="md:w-12 w-8"> <span class="rotate-180 text-4xl text-black">^</span>
           </svg></button>
         <!-- Dropdown menu -->
         <div id="lang-dropdown"
@@ -101,8 +101,9 @@
     </ul>
   </menu>
 
-  <main class="container mx-auto px-8">
-    <img id="bg-1" src="/image/bg-image-1.png" alt="" class="bg-image w-32 lg:w-60 absolute top-[80vh] right-0 -z-10">
+
+  <main class="container mx-auto px-10 sm:px-20"  id="scene">
+    <img id="bg-1" data-depth=".1" src="/image/bg-image-1.png" alt="" class="bg-image w-32 lg:w-60 absolute top-[80vh] right-0 -z-10">
     <img id="bg-2" src="/image/bg-image-2.png" alt="" class="bg-image w-32 lg:w-60 absolute top-[150vh] left-0 -z-10">
     <img id="bg-3" src="/image/bg-image-3.png" alt="" class="bg-image w-32 lg:w-60 absolute top-[230vh] right-0 -z-10">
     <img id="bg-4" src="/image/bg-image-4.png" alt="" class="bg-image w-32 lg:w-60 absolute top-[300vh] left-0 -z-10">
@@ -110,7 +111,7 @@
     <img id="bg-6" src="/image/bg-image-7.png" alt="" class="bg-image w-32 lg:w-60 absolute top-[450vh] left-0 md:hidden -z-10">
     <!-- Head  -->
     <section class="flex flex-col-reverse justify-between lg:flex-row m-auto">
-      <div class="flex flex-col items-center justify-end basis-1/2">
+      <div class="flex flex-col items-center justify-center basis-1/2">
         <h3 class="text-lg text-center md:text-left md:text-3xl font-semibold ">Привлекайте внимание, выделяйтесь,достигайте успеха — с нами, вашим надежным
           маркетинговым партнером! </h3>
         <a href="#"
@@ -122,10 +123,10 @@
 
     <!-- what you get -->
     <section id="whatGet">
-      <h2 class="text-3xl md:text-5xl font-bold mt-32 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mt-28 text-center">
         ЧТО ВЫ ПОЛУЧИТЕ ?
       </h2>
-      <div class="mt-24 flex flex-col gap-20 xl:flex-row justify-center items-center">
+      <div class="mt-28 flex flex-col gap-20 xl:flex-row justify-center items-center">
         <div class="flex flex-col justify-start" data-aos="fade-right">
           <img src="/image/round.png" alt="" class="w-20 animate-pulse">
           <p class="ml-20 w-72">У нас большойопыт работыи <br /> проверенные кейсы</p>
@@ -152,14 +153,14 @@
       <div class="flex justify-center" data-aos="fade-up">
 
         <a href="#"
-          class="text-xl font-bold text-white rounded-full bg-[#28BF04] py-5 lg:py-6 px-8 lg:px-12 mt-12 my-auto  transition hover:opacity-90 hover:scale-110">ОСТАВИТЬ
+          class="text-xl font-bold text-white rounded-full bg-[#28BF04] py-5 lg:py-6 px-8 lg:px-12 mt-24 my-auto  transition hover:opacity-90 hover:scale-110">ОСТАВИТЬ
           ЗАЯВКУ</a>
       </div>
     </section>
 
     <!-- Work stage -->
     <section id="stages">
-      <h2 class="text-3xl md:text-5xl font-bold mt-32 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mt-64 text-center">
         ЭТАПЫ РАБОТ
       </h2>
       <div class="flex flex-col justify-center mt-24"  data-aos="zoom-in-up">
@@ -168,6 +169,7 @@
           <div class="h-64 relative -left-1 flex items-start border-l-8 border-[#28BF04]">
             <div class="flex flex-row items gap-10 group">
               <div class="absolute w-12 h-12 -left-7 -top-0 rounded-full bg-[#28BF04] transition group-hover:scale-125"></div>
+              <div class="absolute w-12 h-12 -left-7 -top-1 rounded-full bg-[#28BF04] transition group-hover:scale-125 animate-ping"></div>
               <p class="text-lg md:text-3xl font-light ml-12 md:ml-20 transition group-hover:scale-125 group-hover:translate-x-8">Анализ и исследование</p>
             </div>
           </div>
@@ -176,6 +178,7 @@
           <div class="flex justify-end">
             <div class="h-64 relative -right-1 flex items-start border-r-8 border-[#28BF04] group">
               <p class="text-lg md:text-3xl font-light transition relative -left-7 group-hover:scale-125 group-hover:-translate-x-8">Разработка стратегии</p>
+              <div class="absolute w-12 h-12 -right-7 -top-1 rounded-full bg-[#28BF04] transition group-hover:scale-125 animate-ping"></div>
               <div class="absolute w-12 h-12 -right-7 -top-1 rounded-full bg-[#28BF04] transition group-hover:scale-125"></div>
             </div>
           </div>
@@ -186,6 +189,7 @@
           <div class="h-64 relative -left-1 flex items-start border-l-8 border-[#28BF04]">
             <div class="flex flex-row items-center group">
               <div class="absolute w-12 h-12 -left-7 -top-1 rounded-full bg-[#28BF04] transition group-hover:scale-125"></div>
+              <div class="absolute w-12 h-12 -left-7 -top-1 rounded-full bg-[#28BF04] transition group-hover:scale-125 animate-ping"></div>
               <p class="text-lg md:text-3xl font-light ml-12 md:ml-20  transition group-hover:scale-125 group-hover:translate-x-8">Создание контента</p>
             </div>
           </div>
@@ -195,6 +199,7 @@
             <div class="h-64 relative -right-1 flex items-start border-r-8 border-[#28BF04] group">
               <p class="text-lg md:text-3xl font-light relative -left-7 transition group-hover:scale-125 group-hover:-translate-x-8">Реализация и оптимизация</p>
               <div class="absolute w-12 h-12 -right-7 -top-1 rounded-full bg-[#28BF04] transition group-hover:scale-125"></div>
+              <div class="absolute w-12 h-12 -right-7 -top-1 rounded-full bg-[#28BF04] transition group-hover:scale-125 animate-ping"></div>
             </div>
           </div>
           <div></div>
@@ -204,6 +209,7 @@
           <div class="h-64 relative -left-1 flex items-start border-l-8 border-[#28BF04] group">
             <div class="flex flex-row items-center">
               <div class="absolute w-12 h-12 -left-7 -top-1 rounded-full bg-[#28BF04] transition group-hover:scale-125"></div>
+              <div class="absolute w-12 h-12 -left-7 -top-1 rounded-full bg-[#28BF04] transition group-hover:scale-125 animate-ping"></div>
               <p class="text-lg md:text-3xl font-light ml-12 md:ml-20 transition group-hover:scale-125 group-hover:translate-x-8">Аналитика и измерение</p>
             </div>
           </div>
@@ -212,65 +218,66 @@
           <div class="flex justify-end">
             <div class="relative -right-1 flex items-start border-r-8 border-[#28BF04] group">
               <p class="text-lg md:text-3xl font-light relative -left-7 transition group-hover:scale-125 group-hover:-translate-x-8">Оптимизация и развитие</p>
-              <div class="absolute w-12 h-12 -right-7 top-1 rounded-full bg-[#28BF04] transition group-hover:scale-125"></div>
+              <div class="absolute w-12 h-12 -right-7 top-4 rounded-full bg-[#28BF04] transition group-hover:scale-125"></div>
+              <div class="absolute w-12 h-12 -right-7 top-4 rounded-full bg-[#28BF04] transition group-hover:scale-125 animate-ping"></div>
             </div>
           </div>
           <div></div>
         </div>
       </div>
-
     </section>
+
     <!-- clients -->
     <section id="portfolio">
-      <h2 class="text-3xl md:text-5xl font-bold mt-32 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mt-24 text-center">
         ПОРТФОЛИО
       </h2>
       <div class="grid grid-cols-3" data-aos="zoom-in-up">
-        <div class="transition hover:opacity-90 hover:scale-125 flex items-center"><img src="/image/client-1.png" alt=""></div>
-        <div class="transition hover:opacity-90 hover:scale-125 flex items-center"><img src="/image/client-2.png" alt=""></div>
-        <div class="transition hover:opacity-90 hover:scale-125"><img src="/image/client-3.png" alt=""></div>
-        <div class="transition hover:opacity-90 hover:scale-125"><img src="/image/client-4.png" alt=""></div>
-        <div class="transition hover:opacity-90 hover:scale-125"><img src="/image/client-5.png" alt=""></div>
-        <div class="transition hover:opacity-90 hover:scale-125"><img src="/image/client-6.png" alt=""></div>
+        <div class="transition scale-150 sm:scale-100 hover:opacity-90 hover:scale-125 flex items-center"><img src="/image/client-1.png" alt=""></div>
+        <div class="transition scale-125 sm:scale-100 hover:opacity-90 hover:scale-125 flex items-center"><img src="/image/client-2.png" alt=""></div>
+        <div class="transition scale-125 sm:scale-100 hover:opacity-90 hover:scale-125"><img src="/image/client-3.png" alt=""></div>
+        <div class="transition scale-125 sm:scale-100 hover:opacity-90 hover:scale-125"><img src="/image/client-4.png" alt=""></div>
+        <div class="transition scale-125 sm:scale-100 hover:opacity-90 hover:scale-125"><img src="/image/client-5.png" alt=""></div>
+        <div class="transition scale-125 sm:scale-100 hover:opacity-90 hover:scale-125"><img src="/image/client-6.png" alt=""></div>
       </div>
     </section>
 
     <!-- Form -->
-    <div class="flex flex-col justify-center">
-      <h2 class="text-3xl md:text-5xl font-bold mt-32 text-center">
+    <section class="flex flex-col justify-center">
+      <h2 class="text-3xl md:text-5xl font-bold mt-12 sm:mt-24 text-center">
         Есть проект? Гоу обсудим!
       </h2>
       <form id="contact-form" action="HTTPS://form-for-telegram-bot.vercel.app/api/send-contact" method="POST"
-        class="mt-24 flex flex-col">
-        <div class="flex flex-col justify-center gap-12 lg:flex-row ">
+        class="mt-4 sm:mt-12 flex flex-col">
+        <div class="flex flex-col justify-center gap-4 sm:gap-12 lg:flex-row ">
           <div class="flex flex-col items-center lg:items-start">
-            <label for="name" class="text-3xl font-light my-4">Имя (обязательно)</label>
+            <label for="name" class="text-2xl sm:text-3xl font-light my-2 sm:my-4">Имя (обязательно)</label>
             <input type="text" id="name" name="name" class="p-2 bg-gray-300 w-72 sm:w-[420px] rounded-md " required />
           </div>
           <div class="flex flex-col items-center lg:items-start">
-            <label for="tel" class="text-3xl font-light my-4">Номер (обязательно)</label>
+            <label for="tel" class="text-2xl sm:text-3xl font-light my-2 sm:my-4">Номер (обязательно)</label>
             <input id="tel" name="tel" type="tel" class="p-2 bg-gray-300 w-72 sm:w-[420px] rounded-md" required value="+998 "
               oninput="formatNumber(this)" />
           </div>
         </div>
         <div class="flex justify-center">
           <button type="submit"
-            class="text-xl font-bold text-white rounded-full bg-[#28BF04] py-5 lg:py-6 px-8 lg:px-12 mt-12 transition hover:opacity-90 hover:scale-110">ОСТАВИТЬ
+            class="text-lg sm:text-xl font-bold text-white rounded-full bg-[#28BF04] py-5 lg:py-6 px-8 lg:px-12 mt-12 sm:mt-16 transition hover:opacity-90 hover:scale-110">ОСТАВИТЬ
             ЗАЯВКУ</button>
         </div>
       </form>
-    </div>
+    </section>
   </main>
 
-  <footer class=" mt-48 py-8 bg-black">
-    <div class="container mx-auto px-8 gap-2 sm:gap-8 flex lg:flex-row justify-between">
+  <footer class="mt-12 sm:mt-24 py-8 bg-black">
+    <div class="container mx-auto px-8 gap-8 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between">
       <div class="flex items-center"><a href="#header" class="flex items-center"><img src="/image/logo-white.png" class="w-56" alt=""></a></div>
-      <div class="flex flex-col gap-2 text-white text-base">
+      <div class="flex flex-col gap-2 text-white text-base justify-center items-center">
         <p class="font-semibold">Контакты</p>
         <a href="tel:+998994935584">+998994935584</a>
         <a href="tel:+998930045554">+998930045554</a>
       </div>
-      <div class="flex lg:flex-row gap-2 sm:gap-8 lg:gap-14 items-center">
+      <div class="flex lg:flex-row gap-6 sm:gap-8 lg:gap-14 items-center">
         <div class=""><a href="#"><img src="/image/telegram.png" alt="" width="44"></a></div>
         <div><a href="#"><img src="/image/instagram.png" alt="" width="44"></a></div>
         <div><a href="#"><img src="/image/youtube.png" alt="" width="44"></a></div>
