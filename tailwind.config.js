@@ -66,7 +66,7 @@ module.exports = {
           },
           "50%, 100%": {
             transform: "scaleY(1)",
-            background: "rgb(219, 39, 119)",
+            background: "rgb(40, 191, 4)",
           },
         },
         // rotate square and circle
@@ -134,11 +134,11 @@ module.exports = {
         wave: {
           "0%": {
             "box-shadow":
-              "0 0 0 0 rgba(219, 39, 119, 0.3), 0 0 0 1em rgba(219, 39, 119, 0.3), 0 0 0 2em rgba(219, 39, 119, 0.3),0 0 0 3em rgba(219, 39, 119, 0.3)",
+              "0 0 0 0 rgba(40, 191, 4, 0.3), 0 0 0 1em rgba(40, 191, 4, 0.3), 0 0 0 2em rgba(40, 191, 4, 0.3),0 0 0 3em rgba(40, 191, 4, 0.3)",
           },
           "100%": {
             "box-shadow":
-              "0 0 0 1em rgba(219, 39, 119, 0.3), 0 0 0 2em rgba(219, 39, 119, 0.3), 0 0 0 3em rgba(219, 39, 119, 0.3), 0 0 0 4em rgba(219, 39, 119, 0)",
+              "0 0 0 1em rgba(40, 191, 4, 0.3), 0 0 0 2em rgba(40, 191, 4, 0.3), 0 0 0 3em rgba(40, 191, 4, 0.3), 0 0 0 4em rgba(40, 191, 4, 0)",
           },
         },
         //circle-left
