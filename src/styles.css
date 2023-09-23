@@ -50,3 +50,11 @@
     src: url(/src/Gilroy-Black.ttf) format("ttf");
   }
 }
+
+a,button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,p {
+  font-family: 'Gilroy',sans-serif;
+}
