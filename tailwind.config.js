@@ -134,7 +134,7 @@ module.exports = {
         wave: {
           "0%": {
             "box-shadow":
-              "0 0 0 0 rgba(40, 191, 4, 0.3), 0 0 0 1.5em rgba(40, 191, 4, 0.3)",
+              "0 0 0 0 rgba(40, 191, 4, 1), 0 0 0 1.5em rgba(40, 191, 4, 0.3)",
           },
           "100%": {
             "box-shadow": 
@@ -220,7 +220,7 @@ module.exports = {
         "spin-slow": "spin 12s linear infinite", // clock spin slow
 
         // wave
-        wave: "wave 1s linear infinite",
+        wave: "wave 0.5s linear infinite",
 
         // twin-circle
         "circle-left": "circle-left 2s ease-in-out infinite",
