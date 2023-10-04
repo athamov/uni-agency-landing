@@ -220,7 +220,7 @@ module.exports = {
         "spin-slow": "spin 12s linear infinite", // clock spin slow
 
         // wave
-        wave: "wave 0.5s linear infinite",
+        wave: "wave 1s linear infinite",
 
         // twin-circle
         "circle-left": "circle-left 2s ease-in-out infinite",

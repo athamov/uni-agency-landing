@@ -1060,6 +1060,10 @@ video {
   width: 8rem;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .w-52 {
   width: 13rem;
 }
@@ -1215,7 +1219,7 @@ video {
 }
 
 .animate-wave {
-  animation: wave 0.5s linear infinite;
+  animation: wave 1s linear infinite;
 }
 
 .touch-auto {
@@ -3289,6 +3293,10 @@ h1,h2,p {
 
   .lg\:h-\[500px\] {
     height: 500px;
+  }
+
+  .lg\:w-48 {
+    width: 12rem;
   }
 
   .lg\:w-60 {
